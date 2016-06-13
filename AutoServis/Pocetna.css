@@ -1,0 +1,159 @@
+@import url(https://fonts.googleapis.com/css?family=Play:400,700&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Audiowide&subset=latin,latin-ext);
+
+
+body 
+{
+	background-image: url('background.jpg');
+	
+}
+#Zaglavlje
+{
+	
+}
+.Menu {
+	font-family: Audiowide;
+	width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+	
+}
+.Menu li 
+{
+display: inline;	
+float: left;
+padding: 0px 37px 80px 65px;
+margin: -122px 0 0 0px;	
+
+}
+
+.Menu ul 
+{
+	display: flex;
+	margin-top: -120px;
+}
+
+.Menu a 
+{
+	color:black;
+}
+.Menu a:link
+{
+	text-decoration:none;
+}
+.Menu a:visited
+{
+	text-decoration:none;
+}
+
+.Menu a:hover
+{
+	text-decoration:none;
+}
+.Menu a:active
+{
+	text-decoration:none;
+}
+
+
+#sredina{
+    width: 1200px;
+	margin-left:auto;
+	margin-right:auto;	
+}
+
+
+.forma
+{	
+	color:white;
+	background-color: #CA0000;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 20%;
+    padding: 38px 70px 28px 38px;
+    width: 260px;
+    height: 300px;
+    margin: auto;
+}
+
+#labela_forma
+{	
+	color:#E0CACA;
+    padding: 3px 6px 13px 62px;
+}
+#labela_naziv
+{	
+	color:#E0CACA;
+    padding: 3px 6px 13px 62px;
+}
+#labela_broj
+{	
+	color:#E0CACA;
+    padding: 3px 6px 13px 62px;
+}
+#labela_drzava
+{
+	color:#E0CACA;
+    padding: 3px 6px 13px 62px;
+	
+}
+#dugmad
+{	
+    display: flex;
+	margin-right:10px;
+}
+#dugmad
+{	
+    display: flex;
+	margin-right:10px;
+}
+#dugme
+{	
+    display: flex;
+	margin-left:107px;
+}
+.Novosti1 ul
+{
+	float:left;
+  
+}
+.Novosti1 li
+{
+	width: 150px;
+}
+.Novosti1
+{	
+	overflow:hidden;
+	width: 110%;
+	padding-left:260px;
+	
+}
+
+.vijesti
+{
+	border: 2px solid black;
+	background-color: #CA0000;
+	color:white;
+	padding: 5px 288px 3px 47px;
+	border-radius:20%;
+	height: 250px;
+	margin-bottom: 10px;
+	width: 477px;
+}
+
+.vijesti img
+{
+	float:left;
+	height:120px;
+	width:200px;
+	margin-left:20px;
+}
+.vijesti p
+{
+	width:400px;
+}
+#sort
+{
+	position:relative;
+	margin:auto;
+}

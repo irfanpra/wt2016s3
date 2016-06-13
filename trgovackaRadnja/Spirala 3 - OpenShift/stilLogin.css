@@ -1,0 +1,69 @@
+﻿body {
+  background-image: url("https://images.alphacoders.com/739/73933.jpg");
+  background-size: cover;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-attachment: fixed;
+}
+
+.formaOkvir {
+  height: 40%;
+  width: 24%;
+  position: absolute;
+  top: 30%;
+  left: 37%;
+}
+
+form {
+  background-color: #F8F8FF;
+  opacity: 0.8;
+  padding-left: 8%;
+  padding-right: 8%;
+  border-radius: 25px;
+  font-size: 1vw;
+  font-weight: bold;
+  opacity: 1;
+}
+
+.welcome {
+  font-weight: bold;
+  font-size: 5vw;
+  position: absolute;
+  left: 35%;
+  top: 15%;
+  opacity: 0.8
+}
+
+label {
+  font-weight: bold;
+  font-size: 1.2vw;
+  opacity: 1.0;
+}
+
+#potvrdi {
+  opacity: 1;
+  float: right;
+  padding-right: 1px;
+  height: 100%;
+  width: 100%;
+  font-weight: bold;
+  background-color: #F8F8FF;
+  border-color: #708090;
+}
+
+input {
+  border-radius: 8px;
+  width: 65%;
+}
+
+.neispravniPodaci {
+	display: none;
+	font-size: 1.5vw;
+	position: absolute;
+	background-color: #F8F8FF;
+	border-color: #708090;
+	border: 0.1vw solid;
+	border-radius: 1vw;
+	top: 55%;
+	left: 33%;
+}

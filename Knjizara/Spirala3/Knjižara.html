@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<TITLE>eBook knjizara</TITLE>
+
+<link rel="stylesheet" type="text/css" href="stil.css">
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script src = "novost.js"></script>
+</HEAD>
+<BODY>
+     <div id = "Naslov">
+       <h1>eBook</h1>
+     </div>
+        <div id="meni">
+             <ul>
+             <li><a href="Knjižara.html">Početna</a></li>
+             <li><a href="Knjiga.html">Knjige</a></li>
+             <li><a href="Linkovi.html">Linkovi</a></li>
+             <li><a href="Onama.html">O nama</a></li>
+             <li><a href="Kontakt.html">Kontakt</a></li>
+			  <li><a href="Login.php">Login</a></li>
+             </ul>
+            </div>
+			 
+		 	 <select id = "novostiSelect" onchange="Promijeni()">
+			 <option value="sve" id ="sve">Sve Novosti</option>
+			 <option value="danasnje" id ="danasnje">Današnje novosti</option>
+			 <option value="sedmicne" id="sedmicne">Sedmične novosti</option>
+			 <option value="mjesecne" id="mjesecne">Mjesečne novosti</option>
+			 </select>
+			 
+			 <div id = "abecednoSortiranje">
+			 <form>
+             <input type="checkbox" name = "sortitano">Sortiraj abecedno<br>
+             <input type="submit" name = "submit" value = "OK" onclick = "SortirajAbecedno()">	
+             </form>
+			 </div>
+             <?php
+			$_autor="";
+			$_naziv="";
+			$_novost="";
+			$_datum="";
+			
+			 $_file = fopen("NovostiCSVsaForme.csv","r");	
+             while (!feof($_file) )	
+             {
+			   $_text = fgetcsv($_file);
+			   $_autor = $_text[1];
+			   $_naziv = $_text[2];
+			   $_novost = $_text[3];
+			   $_datum = $_text[4];
+			 }			   
+			  echo "<div class ='Glavno' name ='Glavno'>";
+			  echo "<div class='Novo'>";
+			  echo "<div class = 'vrijeme'>";
+              echo "<h4>"print_r($_datum); echo"</h4>";
+			  echo"</div>"
+			  echo "<div class = 'nazivNovosti'>";
+              echo "<h3>"print_r($_naziv); echo"</h3>";
+			  echo"</div>"
+			  echo "<div class = 'nazivAutora'>";
+              echo "<h4>"print_r($_autor); echo"</h4>";
+			  echo"</div>"
+			  echo "<div class = 'objavljenaNovost'>";
+              echo "<p>"print_r($_autor); echo"</p>";
+			  echo"</div>"
+			  <echo"</div>"
+		<echo"</div>"
+     fclose($_file);
+?>
+  <div id="LOGOKnjizare">
+  <p>B</p>
+  </div>
+  
+</BODY>
+</HTML>

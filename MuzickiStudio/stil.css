@@ -1,0 +1,840 @@
+@import url(http://fonts.googleapis.com/css?family=Gabriela);
+body {
+	background-image: url("Slike/pozadina.jpg");
+	margin:0;
+	width: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+/*meni*/
+#zaglavlje {
+	background-color:black;
+	height:10vw;
+	color:green;
+	font-family:Gabriela;
+	text-align:center;
+	opacity: 0.8;
+}
+#zaglavlje h1{
+	font-size: 4.5vw;
+	margin:0;
+	color: white;
+	float: left;
+	padding: 3%;
+	position: absolute;
+	width: 94%;
+	text-align: center;
+}
+
+#meni {
+	clear:both;
+	background-color: white ;
+	opacity: 0.9;
+	padding:0.5%;
+	height:1.5vw;
+	font-size:1.3vw;
+}
+
+#meni>ul {
+	padding:0px;
+	margin:0px;
+	text-align:center;
+}
+#meni>ul>li {
+	list-style-type:none;
+	display:inline;
+	margin-right: 3vw;
+	transition: 0.5s ease-out;
+	-moz-transition: 0.5s ease-out; /* Firefox 4 */
+	-webkit-transition:  0.5s ease-out; /* Safari and Chrome */
+	-o-transition: 0.5s ease-out; /* Opera */
+	-ms-transition: 0.5s ease-out; /* Explorer 10 */
+}
+
+#meni a:visited {
+	text-decoration: none;
+	color: red;
+}
+
+#meni a:hover {
+	color: #FF8080;
+	text-decoration: none;
+}
+
+#meni a:active {
+	text-decoration: none;
+	outline: 0.1vw solid red;
+	color: #8C0000;
+}
+
+/*logo*/
+#logo {
+	height: 6vw;
+	position:absolute;
+	width: 6vw;
+	border-radius: 10%;
+	transform: rotate(765deg);
+	background: #e6e6e6;
+	margin:2%;
+	float:right;
+	transition: 0.5s ease-out;
+	-moz-transition: 0.5s ease-out; /* Firefox 4 */
+	-webkit-transition:  0.5s ease-out; /* Safari and Chrome */
+	-o-transition: 0.5s ease-out; /* Opera */
+	-ms-transition: 0.5s ease-out; /* Explorer 10 */
+}
+
+#kruzic {
+	position: absolute;
+	height: 24%;
+	width: 21%;
+	background: black;
+	top: 59%;
+	left: 52%;
+	border-radius: 50%;
+}
+
+#linija {
+	position:absolute;
+	border-radius: 50%/100px 100px 0 0;
+	top:7%;
+	left:40%;
+	width:6%;
+	height: 66%;
+	transform: rotate(-45deg);
+	background-color: black;
+
+}
+#logo:hover{
+	border-radius: 50%;
+}
+
+/*Coveri*/
+.GlavniDioCoveri {
+	margin-top: 3%;
+	margin-left: 3%;
+	margin-right: 3%;
+	display: inline-block;
+}
+
+.Pjesma {
+	height:30%;
+	width:30%;
+	margin-left: auto;
+	margin-right: auto;
+	display: inline;
+}
+.Pjesma a {
+	position: relative;
+	display: inline-block;
+	text-align:center;
+	font-size:1.3vw;
+	padding:0.5vw;
+	height: auto;
+	width:auto;
+}
+
+.Pjesma a span {
+	position: absolute;
+	background-color: rgba(0,0,0,0.5);
+	top: 50%;
+	left: 50%;
+	margin-top: -1vw;
+	margin-left: -50%;
+	width: 100%;
+	height: 3.3vw;
+	color: white;
+}
+
+.Pjesma img {
+	transition: 0.5s ease-out;
+	-moz-transition: 0.5s ease-out; /* Firefox 4 */
+	-webkit-transition:  0.5s ease-out; /* Safari and Chrome */
+	-o-transition: 0.5s ease-out; /* Opera */
+	-ms-transition: 0.5s ease-out; /* Explorer 10 */
+	width: 15.5vw;
+	height: auto;
+	background-repeat: no-repeat;
+	background-size: contain;
+	border: 0.5vw double white;
+}
+
+.Pjesma img:hover {
+	opacity:0.7;
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+
+
+	-webkit-box-shadow: 0px 0px 15px 5px white;
+	box-shadow: 0px 0px 15px 5px white;
+}
+
+
+/*O meni*/
+.omeni {
+	color:white;
+	font-size: 1.5vw;
+	text-align: left;
+}
+.omeni p {
+	float: left;
+	padding-top: 2%;
+	padding-left: 2%;
+	width: 45%;
+}
+.omeni img {
+	float: right;
+	width: 30%;
+	margin-top: 3%;
+	margin-right: 15%;
+	height: auto;;
+	background-repeat: no-repeat;
+	background-size: contain;
+	border: 0.3vw groove red;
+}
+
+.omeni a:visited {
+	text-decoration: none;
+	color: red;
+}
+
+.omeni a:hover {
+	color: #FF8080;
+	text-decoration: none;
+}
+
+.omeni a:active {
+	text-decoration: none;
+	outline: 0.1vw solid red;
+	color: #8C0000;
+}
+
+/*Novosti*/
+.GlavniDioNovosti {
+	margin-top: 8vw;
+	width: 80%;
+	margin-bottom: 20vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.GlavniDioNovosti .Novost
+{
+	clear: both;
+	position: relative;
+	display: inline-block;
+	text-align:center;
+	font-size:1.7vw;
+	color: red;
+	padding:0.3vw;
+	height: 14vw;
+	width:45%;
+	background-color:#E8e8e8;
+	opacity: 0.8;
+	border: 0.3vw double red;
+	margin: 0.5vw;
+	overflow: hidden;
+	background-size: contain;
+	overflow: hidden;
+
+	transition: 0.3s ease-out;
+	-moz-transition: 0.3s ease-out; /* Firefox 4 */
+	-webkit-transition:  0.3s ease-out; /* Safari and Chrome */
+	-o-transition: 0.3s ease-out; /* Opera */
+	-ms-transition: 0.3s ease-out; /* Explorer 10 */
+}
+
+.GlavniDioNovosti .Novost p
+{
+	padding: 1%;
+	text-align: center;
+	position: relative;
+	float: left;
+	vertical-align: middle;
+	width: 49%;
+	justify-content:center;
+	align-content:center;
+}
+
+
+
+.Novost img
+{
+	display: inline-block;
+	vertical-align: middle;
+	width: 49%;
+	float: right;
+}
+
+.Novost:hover {
+
+	opacity:0.7;
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+
+
+	-webkit-box-shadow: 0px 0px 15px 5px white;
+	box-shadow: 0px 0px 15px 5px white;
+}
+
+/*Tabela*/
+table {
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 5%;
+	border:2vw;
+	font-size: 1.5vw;
+	text-align: center;
+	height: 25em;
+	width: 60%;
+	opacity: 0.75;
+}
+
+table.center {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+tr {
+	color: white;
+	background-color: #4A0E0E;
+	text-align: center;
+
+	transition: 0.5s ease-out;
+	-moz-transition: 0.5s ease-out; /* Firefox 4 */
+	-webkit-transition:  0.5s ease-out; /* Safari and Chrome */
+	-o-transition: 0.5s ease-out; /* Opera */
+	-ms-transition: 0.5s ease-out; /* Explorer 10 */
+}
+
+tr:hover {
+	background-color: tomato;
+}
+
+.paran {
+	background-color: #851818;
+}
+
+.prvi {
+	background-color: #188585;
+}
+
+input[type=text], select {
+	padding: 1vw 1.5vw;
+	margin: 1vw 0;
+	display: inline-block;
+	border-radius: 0.3vw;
+	box-sizing: border-box;
+	box-shadow: 0 0 0.3vw #FF7052;
+
+}
+
+/*Forma Kontakt*/
+.FormaKontakt input[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 0.7vw;
+	border: 0.2vw double grey;
+	width: 8vw;
+	height: 3vw;
+	cursor: pointer;
+	margin-top: 2vw;
+	margin-left: auto;
+	font-size: 1vw;
+	margin-right: auto;
+	display:block;
+	box-shadow: 0 0 0.7vw #FF7052;
+	text-align: center;
+}
+
+.FormaKontakt input[type=submit]:hover {
+	background-color: #45a049;
+}
+
+.FormaKontakt input[type=email], input[type=text]
+{
+	display:flex;
+	box-sizing: border-box;
+	width:30vw;
+	border: 0.2vw solid silver;
+	border-radius: 0.4vw;;
+	font-family: serif;
+	font-size: 1.2vw;
+	height: 2vw;
+	box-shadow: 0 0 0.3vw #FF7052;
+}
+.FormaKontakt .legendaKontakt
+{
+	border-radius: 2vw;
+	position: relative;
+	padding-top: 2vw;
+	text-align: center;
+	width: 100%;
+	height: 4vw;
+	display: block;
+	background: #FF7052;
+	color: #fff;
+	font-size: 2vw;
+}
+
+.FormaKontakt .legendaKontakt:after
+{
+	content: "";
+	background-image: url("Slike/dvaUseraSeGrle.png");
+	background-size: 4vw 4vw;
+
+	background-repeat: repeat-x;
+	opacity: 0.1;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+}
+
+textarea {
+	display:flex;
+	box-sizing: border-box;
+	width:30vw;
+	border: 0.2vw solid silver;
+	border-radius: 0.4vw;;
+	font-family: serif;
+	overflow: hidden;
+	resize: none;
+	height: 8vw;
+	box-shadow: 0 0 0.3vw #FF7052;
+}
+
+
+#kontakt {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3%;
+	border-radius: 4vw;
+	background-color: #f2f2f2;
+	padding: 3%;
+	width: 30%;
+	opacity: 0.95;
+	font-weight: bold;
+	background-color:white;
+	font-size: 1.1vw;
+}
+
+#kontaktiraj  {
+	clear: both;
+	color: white;
+	font: Serif;
+	text-align: center;
+	font-style: italic;
+	font-size: 2vw;
+	height: 4vw;
+	margin: 1vw;
+}
+
+#dugme {
+	width: 9vw;
+	height: 4vw;
+	display: block;
+	background: #fff;
+	border-radius: 4vw;
+	border: 0.2vw solid #FF7052;
+	color: #FF7052;
+	font-size: 1.4vw;
+	cursor: pointer;
+	transition: 0.5s ease-out;
+	-moz-transition: 0.5s ease-out; /* Firefox 4 */
+	-webkit-transition:  0.5s ease-out; /* Safari and Chrome */
+	-o-transition: 0.5s ease-out; /* Opera */
+	-ms-transition: 0.5s ease-out; /* Explorer 10 */
+}
+
+#dugme:hover,
+#dugme:focus {
+	background: #FF7052;
+	color: #fff;
+	outline: 0;
+}
+
+#mail {
+	padding: 1%;
+}
+
+.drustvenemreze {
+	padding: 9vw;
+	list-style:none;
+	float: left;
+}
+
+.drustvenemreze a
+{
+	text-decoration: none;
+	font-size: 3vw;
+	color: white;
+}
+
+
+.drustvenemreze li:hover {
+	list-style-image: url("../Slike/strelica.png") ;
+}
+
+a.fb:hover, a.yt:hover {
+	color:silver;
+}
+
+/*izdvoji*/
+.vrijeme {
+	text-align:center;
+	font-size:0.9vw;
+	color:grey;
+	margin-bottom: 0;
+	padding-bottom:0;
+	padding-top: 0.3vw;
+	position: absolute;
+	clear:both;
+	width: 49%;
+}
+
+select#izdvoji {
+	width: 20%;
+	height: 4.5vw;
+}
+
+#izdvoji  {
+	position:absolute;
+	font-size: 1.3vw;
+	opacity:0.8;
+	color: white;
+	margin-left: 2vw;
+	background-color: #DE1B1B;
+	border: 0.5vw double white;
+
+	transition: 1s ease-out;
+	-moz-transition: 1s ease-out; /* Firefox 4 */
+	-webkit-transition:  1s ease-out; /* Safari and Chrome */
+	-o-transition: 1s ease-out; /* Opera */
+	-ms-transition: 1s ease-out; /* Explorer 10 */
+}
+#izdvoji:hover {
+	background-color: #FF7052;
+}
+
+#opcija1, #opcija2, #opcija3 {
+	color: #FA6464;
+	background-color: white;
+}
+
+.pomvrijeme {
+	display: none;
+}
+
+#email_hint:hover {
+	opacity: 0.3;
+}
+
+#telefon_hint:hover {
+	opacity: 0.3;
+}
+
+.Abc {
+	position:absolute;
+	margin-left: 25vw;
+	margin-top: 1.7vw;
+	height: 2vw;
+	font-size: 1.3vw;
+	opacity:0.8;
+	color: white;
+	background-color: #DE1B1B;
+	border: 0.5vw double white;
+	transition: 1s ease-out;
+	-moz-transition: 1s ease-out; /* Firefox 4 */
+	-webkit-transition: 1s ease-out; /* Safari and Chrome */
+	-o-transition: 1s ease-out; /* Opera */
+	-ms-transition: 1s ease-out; /* Explorer 10 */
+}
+
+.Abc:hover
+{
+	background-color: #FF7052;
+}
+
+/*Skip linkovi*/
+a.skip-main {
+	left:-999px;
+	position:absolute;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+	z-index:-999;
+}
+a.skip-main:focus, a.skip-main:active {
+	color: #fff;
+	background-color:#000;
+	left: auto;
+	top: auto;
+	width: 30%;
+	height: auto;
+	overflow:auto;
+	margin: 10px 35%;
+	padding:5px;
+	border-radius: 15px;
+	border:4px solid yellow;
+	text-align:center;
+	font-size:1.2em;
+	z-index:999;
+}
+
+/*Dodavanje novosti*/
+#DodavanjeNovosti, #logout {
+	position: relative;
+	margin-top: 4vw;
+	margin-left: 45%;
+	color: white;
+	width: 10%;
+	height:4.5vw;
+	border-radius: 0.3vw;
+	cursor: pointer;
+	font-size: 1.3vw;
+	display:block;
+	text-align: center;
+	opacity:0.8;
+	background-color: #DE1B1B;
+}
+
+#DodavanjeNovosti:hover, #logout:hover {
+	transition: 0.5s ease-out;
+	-moz-transition:0.5s ease-out; /* Firefox 4 */
+	-webkit-transition: 0.5s ease-out; /* Safari and Chrome */
+	-o-transition: 0.5s ease-out; /* Opera */
+	-ms-transition: 0.5s ease-out; /* Explorer 10 */
+
+	-webkit-box-shadow: 0px 0px 15px 5px white;
+	box-shadow: 0px 0px 15px 5px white;
+}
+
+/*Login*/
+.login {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:10vw;
+	background: #fff;
+	width:40vw;
+}
+#LoginPage {
+	border-radius: 0.3vw;
+
+}
+
+.LoginInput {
+	position: relative;
+	width: 100%;
+	margin: 2vw auto;
+	font-size: 2vw;
+
+}
+
+.LoginInput span {
+	position: absolute;
+	display: block;
+	color: #d4d4d4;
+	left: 1vw;
+	top: 2vw;
+	font-size: 1vw;
+}
+
+.LoginInput #username {
+	width: 90%;
+	padding-left: 5%;
+	display: block;
+	margin-left: 2vw;
+	border: 0.3vw solid #EDEDED;
+	border-radius: 1vw;
+	font-family: helvetica;
+	transition: 0.5s ease-out;
+	-moz-transition: 0.5s ease-out; /* Firefox 4 */
+	-webkit-transition:  0.5s ease-out; /* Safari and Chrome */
+	-o-transition: 0.5s ease-out; /* Opera */
+	-ms-transition: 0.5s ease-out; /* Explorer 10 */
+	color: #a1a1a1;
+	font-size: 1vw;
+
+}
+.LoginInput #password {
+	width: 85%;
+	display: block;
+	margin-left: 2vw;
+	border: 0.3vw solid #EDEDED;
+	border-radius: 1vw;
+	font-family: helvetica;
+	transition: 0.5s ease-out;
+	-moz-transition: 0.5s ease-out; /* Firefox 4 */
+	-webkit-transition:  0.5s ease-out; /* Safari and Chrome */
+	-o-transition: 0.5s ease-out; /* Opera */
+	-ms-transition: 0.5s ease-out; /* Explorer 10 */
+	color: #a1a1a1;
+	font-size: 1vw;
+	padding-left: 5%;
+	box-shadow: 0 0 0.3vw #FF7052;
+
+}
+
+.legend {
+	position: relative;
+	padding-top: 2vw;
+	text-align: center;
+	width: 40vw;
+	height: 4vw;
+	display: block;
+	background: #FF7052;
+	color: #fff;
+	font-size: 2vw;
+}
+
+.legend:after {
+	content: "";
+	background-image: url("Slike/dvaUseraSeGrle.png");
+	background-size: 4vw 4vw;
+	background-repeat: repeat-x;
+	opacity: 0.1;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+}
+
+
+.LoginSubmit {
+	width: 3vw;
+	height: 3vw;
+	display: block;
+	margin: 0 auto 0 auto;
+	background: #ffffff;
+	border-radius: 100%;
+	border: 0.1vw solid #FF7052;
+	color: #FF7052;
+	font-size: 1vw;
+	cursor: pointer;
+	box-shadow: 0 0 0.3vw #FF7052;
+	transition: 0.5s ease-out;
+}
+
+.LoginSubmit:hover,
+.LoginSubmit:focus {
+	background: #FF7052;
+	color: #fff;
+	outline: 0;
+}
+
+
+.LoginInput label
+{
+	padding: 2vw;
+}
+
+
+.Dodaj {
+	margin-top: 3vw;
+	margin-left: auto;
+	margin-right: auto;
+	width: 30vw;
+	padding: 1vw;
+	background: #ffffff;
+	border-radius: 1vw;
+	opacity: 0.95;
+	border-top: 0.7vw double #ff656c;
+}
+
+.Dodaj h1 {
+	text-align: center;
+	color: #000;
+	font-size: 1.3vw;
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 1.5vw;
+}
+
+.Dodaj #nazivVijesti {
+
+	height: 3vw;
+	width: 100%;
+	box-sizing: border-box;
+	border-radius: 0.7vw;
+	border: 0.1vw solid #ff656c;
+	margin-bottom: 1.5vw;
+	font-size: 1vw;
+	padding-left: 1vw;
+	padding-right: 4vw;
+	outline: none;
+	box-shadow: 0 0 0.3vw #FF7052;
+
+}
+
+.Dodaj #tekstVijesti
+{
+	font-size: 1vw;
+	height: 10vw;
+	overflow: hidden;
+	resize: none;
+	display:flex;
+	box-sizing: border-box;
+	width:30vw;
+	border: 0.1vw solid #ff656c;
+	padding-left: 1vw;
+	padding-right: 4vw;
+	padding-top: 1vw;
+	border-radius: 0.7vw;
+	box-shadow: 0 0 0.3vw #FF7052;
+}
+
+.DodajButton {
+	margin-top: 2vw;
+	width: 100%;
+	height: 2.7vw;
+	background: #ff656c;
+	box-sizing: border-box;
+	border-radius: 0.5vw;
+	border: 0.2vw solid #e15960;
+	color: #ffffff;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 1vw;
+	transition: 0.5s ease-out;
+	outline: none;
+	cursor: pointer;
+}
+
+
+.Dodaj button:hover {
+	background: #ff7b81;
+}
+
+.Dodaj #wrapper {
+	width: 100%;
+	overflow: hidden;
+}
+
+.Dodaj input#drzava
+{
+	width: 48%;
+	float: left;
+	font-size: 1vw;
+	overflow: hidden;
+}
+
+.Dodaj input#broj
+{
+	width: 48%;
+	font-size: 1vw;
+	float: right;
+	overflow: hidden;
+}
+#Poruka h4 
+{
+	position: relative;
+	font-size: 1.1vw;
+	left: 2vw;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<TITLE>Kontakt</TITLE>
+
+<link rel="stylesheet" type="text/css" href="stil.css">
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script src = "novost.js"></script>
+</HEAD>
+<BODY>
+
+<div id="Pocetak">
+  <div id="Naslov">
+    <h1>eBook</h1>
+  </div>
+
+    <div id="meni">
+        <ul>
+        <li><a href="Knjižara.html">Početna</a></li>
+        <li><a href="Knjiga.html">Knjige</a></li>
+        <li><a href="Linkovi.html">Linkovi</a></li>
+        <li><a href="Onama.html">O nama</a></li>
+        <li><a href="Kontakt.html">Kontakt</a></li>
+		 <li><a href="Login.php">Login</a></li>
+        </ul>
+        </div>
+       <div id = "OkvirKontakt">
+           <div id = "Forma">
+              <form name ="Forms">
+                <div id = "txt">
+                <label>E-mail: </label>
+                <br></br>
+                <input type="email" name="email" onclick="return ValidirajFormu()" required>
+                <br></br>
+				<label>Država: </label>
+                <br></br>
+                <input type="text" name="drzava" id="drzava" onclick = " return ValidirajFormu()" required>
+                <br></br>
+                <label>Broj telefona: </label>
+                <br></br>
+                <input type="tel" name="tel" id="tel" onclick = " return ValidirajFormu()" required>
+                <br></br>
+                <label>Poruka: </label>
+                <br></br>
+                <textarea rows="4" cols="35" name ="mss" onclick = " return ValidirajFormu()"></textarea>
+                <br></br>
+                <br></br>
+
+            </div>
+			<div id="btn">
+              <input type="submit" value="Pošalji">
+			  </div>
+             </form>
+          </div>
+       </div>
+ </div>
+
+  <div id="LOGOKontakt">
+  <p>B</p>
+  </div>
+</BODY>
+</HTML>

@@ -1,0 +1,74 @@
+<!doctype html> 
+
+<html>
+<head>
+<meta charset=utf-8>
+<title> Svaki Student </title>
+<link rel="stylesheet" href="logo.css">
+<link rel="stylesheet" href="pocetna.css">
+</head>
+<body>
+<div class="tijelo">
+<div class="logo">
+			<p id="S1">
+				s
+			</p>
+			<p id="svaki">
+				vaki
+			</p>
+			<p id="S2">
+				s
+			</p>
+			<p id="student">
+				tudent
+			</p>
+
+		</div>
+<div class="stranica">
+		
+
+<div class="Menu">
+<?php
+	session_start();
+	if(isset($_SESSION['sesija'])){
+		print "<ul>
+
+<li><a href='pocetna.php'>Početna</a></li>
+<li><a href='novosti.php'>Raspored kurseva</a></li>
+<li><a href='linkovi.php'>Linkovi</a></li>
+<li><a href='kontakt.php'>Kontakt</a></li>
+<li><a href='login.php'>LogOut</a></li>
+<li><a href='dodavanjeVijesti.php'>Dodaj Vijest</a></li>
+</ul>!";
+}
+	
+else
+{
+		print "<ul>
+
+<li><a href='pocetna.php'>Početna</a></li>
+<li><a href='novosti.php'>Raspored kurseva</a></li>
+<li><a href='linkovi.php'>Linkovi</a></li>
+<li><a href='kontakt.php'>Kontakt</a></li>
+<li><a href='login.php'>Login</a></li>
+
+</ul>";
+}	
+?>
+</div>
+</div>
+<div class="Linkovi">
+		<br>
+	<br>
+	<br>
+	<ul> 
+
+		<li><a href="http://www.svakistudent.ba/" target=_blank>Možete nas pronaći i klikom OVDJE </a></li>
+		<li><a href="http://mladi.org/" target=_blank>Nevladina organizacija za rad sa mladima Institut za razvoj mladih KULT</a></li>
+		<li><a href="https://www.google.ba/maps/place/Birmingham,+AL,+USA/@33.5309219,-87.1303252,10z/data=!3m1!4b1!4m2!3m1!1s0x888911df5885bfd3:0x25507409eaba54ce" target=_blank>Država iz koje dolazimo je ALABAMA odnosno grad BIRMINGHAM</a></li>
+		<li><a href="https://www.google.ba/maps/dir/Birmingham,+Alabama,+USA/Sarajevo,+Federation+of+Bosnia+and+Herzegovina/@32.8717889,-70.6193551,3z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x888911df5885bfd3:0x25507409eaba54ce!2m2!1d-86.80249!2d33.5206608!1m5!1m1!1s0x4758cbb1ed719bd1:0x562ecda6de87b33e!2m2!1d18.4130763!2d43.8562586" target=_blank>Toliko smo putovali da dođemo do VAS</a></li>
+	</ul>
+	</div>
+	</div>
+</body>
+</html>
